@@ -19,6 +19,7 @@ export class LoginComponent implements OnInit {
   }
 
   loginUser () {
+    if(this.loginUserData.UserName==null || this.loginUserData.Password==null){return window.alert("Please Enter Username/Password")}
     this._auth.loginUser(this.loginUserData)
     .subscribe(
       res => {

@@ -25,3 +25,20 @@ mat-toolbar > span {
     border-style:solid;
     
 }
+app-new-task {
+    margin-bottom: 30px;
+}
+
+.empty-label {
+    opacity:0.2;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 2em;
+}
+
+.cdk-drag-placeholder {
+    opacity: 0;
+}
+.cdk-drag-animating{
+    transition: transform 250ms;
+}

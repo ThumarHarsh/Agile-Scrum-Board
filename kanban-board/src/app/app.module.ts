@@ -16,11 +16,16 @@ import { AuthService } from './auth.service';
 import { AuthGuard } from './auth.guard';
 import { TokenInterceptorService } from './token-interceptor.service';
 import { AppRoutingModule } from './app-routing.module';
+import {MatButtonModule} from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { TaskDialogComponent } from './task-dialog/task-dialog.component';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
     AppComponent,
     TaskComponent,
+    TaskDialogComponent,
     RegisterComponent,
     LoginComponent,
     KananBoard,
@@ -34,7 +39,13 @@ import { AppRoutingModule } from './app-routing.module';
     MatIconModule,
     MatCardModule,
     DragDropModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatInputModule
   ],
   providers: [AuthService,AuthGuard,
   {

@@ -35,4 +35,3 @@ export class TaskDialogComponent {
   task: Task;
   delete?: boolean;
  }
-
