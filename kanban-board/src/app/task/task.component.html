@@ -1,7 +1,16 @@
-<mat-card class="item" (dblclick)="edit.emit(task)">
-    <h2>{{ task.title }}</h2>
-    <p>
-        {{ task.description }}
-    </p>
-</mat-card>
-
+<mat-card class="task-card" (dblclick)="edit.emit(task)">
+    <mat-card-header>
+      <div class="task-card-header">
+        <mat-icon class="task-card-icon">assignment</mat-icon>
+        <h2 class="task-card-title">{{ task.title }}</h2>
+      </div>
+    </mat-card-header>
+    <mat-card-content>
+      <p class="task-card-description">{{ task.description }}</p>
+      <div class="task-card-info">
+        <span class="task-card-label">{{ task.priority }}</span>
+        <span class="task-card-label">{{ task.assignee }}</span>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  

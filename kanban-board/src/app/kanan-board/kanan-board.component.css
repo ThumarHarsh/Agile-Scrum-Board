@@ -1,4 +1,4 @@
-mat-toolbar {
+/* mat-toolbar {
     margin-bottom: 20px;
 }
 
@@ -41,4 +41,40 @@ app-new-task {
 }
 .cdk-drag-animating{
     transition: transform 250ms;
-}
+} */
+
+.container-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .container {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .container h2 {
+    padding: 16px;
+    margin: 0;
+    background-color: #009688;
+    color: #fff;
+  }
+  
+  .mat-card {
+    margin: 16px;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .empty-label {
+    padding: 16px;
+    margin: 0;
+    text-align: center;
+    color: #999;
+    font-style: italic;
+  }
+  

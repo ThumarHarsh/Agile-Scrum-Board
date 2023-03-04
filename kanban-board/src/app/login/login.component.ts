@@ -11,6 +11,7 @@ import { User } from '../user';
 export class LoginComponent implements OnInit {
 
   loginUserData : User = new User();
+  showErrorMessage: boolean;
 
   constructor(private _auth: AuthService,
               private _router: Router) { }
@@ -27,8 +28,10 @@ export class LoginComponent implements OnInit {
         this._router.navigate(['/kananBoard'])
       },
      
-      err => window.alert("Unauthorized....")
+      err => {this.showErrorMessage = true;}
     ) 
   }
-
+  dismissError() {
+    this.showErrorMessage = false;
+  }
 }

@@ -11,7 +11,7 @@ import { TaskDialogComponent, TaskDialogResult } from '../task-dialog/task-dialo
 })
 export class KananBoard {
   todo: Task[] = [
-    {title: 'PLAT-12',description:'GOOD'},
+    {title: 'PLAT-12',description:'GOOD' , priority:'high'},
     {title: 'PLAT-34',description:'BAD'},
   ];
   inProgress: Task[] = [];
